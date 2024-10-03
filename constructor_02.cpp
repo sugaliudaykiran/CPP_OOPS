@@ -14,11 +14,25 @@ class Myclass{
         }
 };
 
+class My2class{
+    public:
+        string lastName;
+        string firstName;
+        My2class(string lname, string fname);
+};
+
+My2class::My2class(string lname, string fname){
+    lastName=lname, firstName=fname;
+}
+
 int32_t main(){
     
     // obj - assigned value with constructor..
-    Myclass Myobj(y=1, x=21, z="faiz");
-    
+    Myclass Myobj(1, 21, "faiz");
+
+    //
+    My2class My2obj("faiz", "MK");
+    cout << My2obj.firstName << " " << My2obj.lastName << "\n";
     return 0;
 }
 
