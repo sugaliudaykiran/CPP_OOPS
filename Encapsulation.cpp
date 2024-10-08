@@ -4,7 +4,7 @@ using namespace std;
 class EmployeeTable{
     //private:
     int salary;
-    // Encapsulation: Hiding the senstivite data from the End - user 
+    // Encapsulation: Hiding the senstivite data from the End - user, here "salary" is private attribute, which used in public methods by using Encapsulation.
     public:
         void setFresherSalary(int s){ // set methods
             salary = s;
